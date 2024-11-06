@@ -1,0 +1,28 @@
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+  <h2 class="text-2xl font-bold text-center mb-6">Product Service</h2>
+  
+  <form id="addProductForm" class="space-y-4 max-w-md mx-auto bg-white p-6 rounded shadow">
+    <h3 class="text-lg font-semibold">Add Product</h3>
+    <input type="text" id="productName" placeholder="Product Name" class="w-full border p-2 rounded" required>
+    <textarea id="productDescription" placeholder="Description" class="w-full border p-2 rounded" required></textarea>
+    <input type="number" id="productPrice" placeholder="Price" class="w-full border p-2 rounded" required>
+    <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded w-full">Add Product</button>
+  </form>
+
+  <div id="productList" class="mt-8 max-w-md mx-auto">
+    <h3 class="text-xl font-semibold mb-4">Products</h3>
+    <!-- Products will be listed here -->
+  </div>
+
+  <script src="js/product.js"></script>
+</body>
+</html>
